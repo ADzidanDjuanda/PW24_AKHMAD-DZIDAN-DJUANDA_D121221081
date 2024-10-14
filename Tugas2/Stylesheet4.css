@@ -1,0 +1,104 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  color: #0f0;
+}
+h3 {
+  color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+p2 {
+  color: #ffffff;
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+nav {
+  flex: 0 0 200px;
+}
+
+nav ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s; /* Adding smooth transition */
+}
+
+/* Active state for nav items */
+nav li.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Hover effect for nav items */
+nav li:hover {
+  color: #ffffff;
+}
+/* Remove underline for all <a> elements in the <li> tags */
+li a {
+  text-decoration: none; /* No underline for links inside list items */
+  color: #0f0; /* Set link color */
+}
+li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Remove underline from all links by default */
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline; /* No underline by default */
+}
+
+/* Add underline to specific links */
+a.underline {
+  text-decoration: underline; /* Underline only for specific links */
+}
+
+a:hover {
+  color: #0f0;
+  padding: 2px 5px;
+}
+
+/* Styling for the main content */
+main {
+  flex: 1;
+}
+
+aside {
+  flex: 0 0 300px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 15px;
+}
+
+footer {
+  margin-top: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 15px;
+}
